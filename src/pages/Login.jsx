@@ -23,14 +23,14 @@ const Login = () => {
     <div className="formContainer">
       <div className="formWrapper">
         <span className="logo">Messenger</span>
-        <span className="title">Login</span>
+        <span className="title">Đăng nhập</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
           <input type="password" placeholder="password" />
-          <button>Sign in</button>
+          <button>Đăng nhập</button>
           {err && <span>Something went wrong</span>}
         </form>
-        <p>You don't have an account? <Link to="/register">Register</Link></p>
+        <p>Bạn chưa có tài khoản? <Link to="/register">Đăng ký</Link></p>
       </div>
     </div>
   );

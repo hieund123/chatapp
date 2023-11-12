@@ -73,9 +73,9 @@ const Input = () => {
   };
 
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault(); 
-      handleSend(); 
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      handleSend();
     }
   };
 
@@ -89,17 +89,18 @@ const Input = () => {
         onKeyPress={handleKeyPress}
       />
       <div className="send">
-        <img src={Attach} alt="" />
         <input
           type="file"
           style={{ display: "none" }}
           id="file"
           onChange={(e) => setImg(e.target.files[0])}
         />
-        <label htmlFor="file">
+        <label htmlFor="file" style={{display:"flex", flexDirection:"column", }}>
           <img src={Img} alt="" />
         </label>
-        <button onClick={handleSend}><SendOutlined /></button>
+        <button onClick={handleSend}>
+          <SendOutlined />
+        </button>
       </div>
     </div>
   );

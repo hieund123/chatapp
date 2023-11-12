@@ -63,22 +63,22 @@ const Register = () => {
     <div className="formContainer">
       <div className="formWrapper">
         <span className="logo">Messenger</span>
-        <span className="title">Register</span>
+        <span className="title">Đăng ký</span>
         <form onSubmit={handleSubmit}>
-          <input required type="text" placeholder="display name" />
+          <input required type="text" placeholder="Tên người dùng" />
           <input required type="email" placeholder="email" />
           <input required type="password" placeholder="password" />
           <input required style={{ display: "none" }} type="file" id="file" />
           <label htmlFor="file">
             <img src={Add} alt="" />
-            <span>Add an avatar</span>
+            <span>Chọn avatar</span>
           </label>
-          <button disabled={loading}>Sign up</button>
+          <button disabled={loading}>Đăng ký</button>
           {loading && "Uploading and compressing the image please wait..."}
-          {err && <span>Something went wrong</span>}
+          {err && <span>Có lỗi khi đăng ký</span>}
         </form>
         <p>
-          You do have an account? <Link to="/login">Login</Link>
+        Bạn đã có tài khoản? <Link to="/login">Đăng nhập</Link>
         </p>
       </div>
     </div>

@@ -21,7 +21,7 @@ const Navbar = () => {
         <span>{currentUser.displayName}</span>
       </Menu.Item>
       <Menu.Item key="logout" onClick={handleLogout}>
-        Logout
+        Đăng xuất
       </Menu.Item>
     </Menu>
   );
